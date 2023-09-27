@@ -1,5 +1,1 @@
-import WittCodeService from "./services/WittCodeService";
-
-const wittCodeService = new WittCodeService();
-
-wittCodeService.sayHello();
+import styles from './my-css.css';

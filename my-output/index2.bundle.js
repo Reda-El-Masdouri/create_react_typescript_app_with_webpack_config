@@ -1,0 +1,1 @@
+(()=>{"use strict";(new class{constructor(){console.log("RedaCodeService instantiated!")}sayHello(){console.log("Reda says hello!")}}).sayHello()})();

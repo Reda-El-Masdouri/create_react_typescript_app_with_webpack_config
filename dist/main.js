@@ -1,0 +1,1 @@
+(()=>{"use strict";(new class{constructor(){console.log("WittCodeService instantiated!")}sayHello(){console.log("WittCode says hello!")}}).sayHello()})();

@@ -1,0 +1,15 @@
+{
+  "name": "create_react_typescript_app_with_webpack_config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^20.7.0"
+  }
+}

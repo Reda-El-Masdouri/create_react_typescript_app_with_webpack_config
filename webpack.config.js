@@ -1,4 +1,7 @@
+const htmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
+    mode: 'development',
     entry: {
         index: {
             import: './src/index.js',
@@ -18,5 +21,6 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
-    }
+    },
+    plugins: [new htmlWebpackPlugin()]
 }

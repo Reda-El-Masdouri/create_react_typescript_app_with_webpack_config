@@ -1,17 +1,20 @@
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const {merge} = require('webpack-merge');
 
-module.exports = {
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const webpackConfig = require('./webpack.config');
+
+module.exports = merge(webpackConfig, {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     devServer: {
         static: './my-output',
         port: 9999,
         open: true
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].bundle.tsx',
         path: `${__dirname}/my-output`,
         clean: true
     },
     plugins: [new htmlWebpackPlugin()]
-}
+})

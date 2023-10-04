@@ -1,12 +1,14 @@
+const {merge} = require('webpack-merge');
+const webpackConfig = require('./webpack.config');
+const path = require('path');
+
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = merge(webpackConfig, {
     mode: 'production',
-    entry: './src/index.js',
     output: {
-        filename: 'bundle.[contenthash].js',
-        path: `${__dirname}/my-output`,
-        clean: true
+        path: path.join(__dirname, '/dist'),
+        filename: 'bundle.js'
     },
     plugins: [new htmlWebpackPlugin()]
-}
+})
